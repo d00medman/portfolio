@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # These dependencies must be manually installed, and
+    'personal_page',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
