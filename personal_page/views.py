@@ -2,8 +2,8 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 
 def index(response):
-    return HttpResponse('<h2>HEY</h2>') # This is normally terrible practice
+    return render(request, 'personal_page/home.html')
 # Create your views here.
