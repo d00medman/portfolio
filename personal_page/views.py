@@ -7,3 +7,6 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'personal/home.html') # for future reference, if you start w/personal_page, maintain that consistancy
 # Create your views here.
+
+def contact(request):
+    return render(request, 'personal/basic.html', {'content':['If you would like to contact me, email me at: ', 'ajmollohan@gmail.com']})
