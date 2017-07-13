@@ -1,0 +1,7 @@
+{%extends 'personal/header.html'%}
+
+{%block content%}
+  {%for language in object_list%}
+    <h3>{{language.name}}</h3>
+  {%endfor%}
+{%endblock%}

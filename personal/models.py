@@ -12,7 +12,7 @@ class Language(models.Model):
     name = models.CharField(max_length = 32)
 
     def __str__(self):
-        return self.title
+        return self.name
 
 class Technology(models.Model):
     class Meta:
@@ -21,5 +21,7 @@ class Technology(models.Model):
     name = models.CharField(max_length = 32)
     description = models.TextField()
 
+    language = models.ForeignKey(Language)
+
     def __str__(self):
-        return self.title
+        return self.name
