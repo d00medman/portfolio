@@ -1,8 +1,10 @@
 {%extends 'personal/header.html'%}
 
 {%block content%}
-  {%for technology in object_list%}
-    <h3>{{technology.name}}</h3>
-    <h5>{{technology.language}}</h5>
+  {%for lang in object_list %}
+    <h3>{{lang.name}}</h3>
+    {%for tech in lang.technology_set.all  %}
+        <h5>{{tech.name}}</h5>
+    {%endfor%}
   {%endfor%}
 {%endblock%}
