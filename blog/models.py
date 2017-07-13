@@ -5,7 +5,7 @@ from django.db import models
 
 # Create your models here.
 
-class Post(models.model):
+class Post(models.Model):
     # name = models.FieldReferenceType(restrictions)
     title = models.CharField(max_length = 140)
     body = models.TextField()
