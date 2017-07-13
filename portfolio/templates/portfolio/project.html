@@ -1,0 +1,8 @@
+{%extends 'personal/header.html'%}
+
+{%block content%}
+<h3>{{project.name}}</h3>
+{{project.long_description|safe|linebreaks}}
+<h5><a href="{{project.github_url}}" target="blank"> View the source code for {{project.name}} on Github</a></h5>
+<h5><a href="{{project.deployed_url}}" target="blank"> View {{project.name}} in a deployed environment</a></h5>
+{%endblock%}
