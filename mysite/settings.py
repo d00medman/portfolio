@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     # These dependencies must be manually installed, and
     'personal',
     'blog',
-    # 'portfolio',
+    'portfolio',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
