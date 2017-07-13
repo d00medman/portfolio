@@ -2,6 +2,10 @@
 
 {%block content%}
 
-  <h4>portfolio page</h4>
+  {%for project in object_list%}
+    <h3>{{project.name}}</h3>
+    <p>{{project.short_description}}</p>
+    <a href="/portfolio/{{project.id}}">Read More</a>
 
+    {%endfor%}
 {%endblock%}

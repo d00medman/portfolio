@@ -3,6 +3,6 @@ from django.views.generic import ListView, DetailView
 from portfolio.models import Project
 
 urlpatterns = [
-    url(r'^$', ListView.as_view(queryset=Project.objects.all().order_by('-date')[:25],
+    url(r'^$', ListView.as_view(queryset=Project.objects.all().order_by('-id')[:25],
                                 template_name='portfolio/portfolio.html'))
 ]
