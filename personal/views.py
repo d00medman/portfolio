@@ -9,4 +9,4 @@ def index(request):
 # Create your views here.
 
 def contact(request):
-    return render(request, 'personal/basic.html', {'content':['If you would like to contact me, email me at: ', 'ajmollohan@gmail.com']})
+    return render(request, 'personal/contact.html')
